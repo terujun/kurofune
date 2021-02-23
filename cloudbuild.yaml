@@ -38,4 +38,4 @@ images:
 tags:
   - gcp-cloud-build-deploy-cloud-run
   - gcp-cloud-build-deploy-cloud-run-managed
-  - test-build1
+  - test-build12345

@@ -1,4 +1,5 @@
-FROM centos:centos7
+FROM jteru/centos7-protox:latest
 
-RUN yum -y update && yum -y install git && yum -y install httpd && yum -y install epel-release && yum -y install nodejs npm && npm install -g n && n stable && yum -y remove nodejs npm 
-RUN npx create-react-app protox && rm -r protox && git clone https://github.com/terujun/kurofune.git && cd kurofune/protox && ls -ltrh && pwd && npm run build
+RUN git clone https://github.com/terujun/kurofune.git && mv /kurofune/protox/ /protox/ && cd /protox && npm run build && cp -pir build/* /var/www/html/
+
+ENTRYPOINT [ "system start httpd" ]

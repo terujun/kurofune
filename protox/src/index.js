@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <h1>ハローkurohune！</h1>
+  <h1>ハローkurohune！</h1>,
 //  <React.StrictMode>
 //    <App />
 //  </React.StrictMode>,

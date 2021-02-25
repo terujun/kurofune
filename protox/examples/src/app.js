@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import jsonp from 'jsonp';
 import ExampleBasic from './ExampleBasic';
 import ExampleWithLightbox from './ExampleWithLightbox';
-import PhotoList from './PhotoList.js'
 import ExampleCustomComponentSelection from './ExampleCustomComponentSelection';
 import ExampleSortable from './ExampleSortable';
 import ExampleDynamicLoading from './ExampleDynamicLoading';

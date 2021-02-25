@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import jsonp from 'jsonp';
 import ExampleBasic from './ExampleBasic';
 import ExampleWithLightbox from './ExampleWithLightbox';
+import PhotoList from './PhotoList.js'
 import ExampleCustomComponentSelection from './ExampleCustomComponentSelection';
 import ExampleSortable from './ExampleSortable';
 import ExampleDynamicLoading from './ExampleDynamicLoading';
@@ -67,7 +68,11 @@ class App extends React.Component {
         {/*<ExampleBasic title={'10:00 AM'} photos={this.state.photos.slice(0, 20)} />
           <ExampleBasic title={'9:00 AM'} photos={this.state.photos.slice(0, 20)} />
           <ExampleBasic title={'Basic Column Layout'} direction="column" photos={this.state.photos.slice(40, 60)} />*/}
-          <ExampleWithLightbox photos={this.state.photos.slice(0, 17)} />
+
+          <ExampleWithLightbox photos={this.state.photos.slice(0, 19)} modalphotos={this.state.photos.slice(19, 38)} />
+
+{//          <PhotoList photos={this.state.photos.slice(0,17)}/>
+    }
         {/*<ExampleCustomComponentSelection photos={this.state.photos.slice(75, 90)} />
           <ExampleSortable photos={this.state.photos.slice(90, 100)} />
           <ExampleDynamicColumns title={'Custom Dynamic Columns'} photos={this.state.photos.slice(100, 120)} />

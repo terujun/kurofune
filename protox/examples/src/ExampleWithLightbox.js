@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 
-function ExampleWithLightbox({ photos }) {
+function ExampleWithLightbox({ photos, modalphotos }) {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -26,7 +26,7 @@ function ExampleWithLightbox({ photos }) {
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={photos.map(x => ({
+              views={modalphotos.map(x => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title,

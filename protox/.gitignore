@@ -1,7 +1,5 @@
 # build
 lib
-dist
-example/dist
 
 # Logs
 logs

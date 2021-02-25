@@ -61,7 +61,6 @@ class App extends React.Component {
   render() {
     console.log(this.state.photos)
     if (this.state.photos) {
-      console.log("teru")
       const width = this.state.width;
       return (
         <div className="App">

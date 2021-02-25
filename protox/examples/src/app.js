@@ -69,7 +69,7 @@ class App extends React.Component {
           <ExampleBasic title={'9:00 AM'} photos={this.state.photos.slice(0, 20)} />
           <ExampleBasic title={'Basic Column Layout'} direction="column" photos={this.state.photos.slice(40, 60)} />*/}
 
-          <ExampleWithLightbox photos={this.state.photos.slice(0, 19)} modalphotos={this.state.photos.slice(19, 20)} />
+          <ExampleWithLightbox photos={this.state.photos.slice(0, 19)} modalphotos={this.state.photos.slice(19, 38)} />
 
 {//          <PhotoList photos={this.state.photos.slice(0,17)}/>
     }

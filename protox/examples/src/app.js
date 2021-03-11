@@ -20,7 +20,7 @@ class App extends React.Component {
   loadPhotos() {
     const urlParams = {
       api_key: '18520e2701f418c8f2c39ff39de3bbdf',
-      photoset_id: '72157718421944272',
+      photoset_id: '72157718610383417',
       user_id: '192285108@N06',
       format: 'json',
       per_page: '120',
@@ -67,7 +67,7 @@ class App extends React.Component {
           <ExampleBasic title={'9:00 AM'} photos={this.state.photos.slice(0, 20)} />
           <ExampleBasic title={'Basic Column Layout'} direction="column" photos={this.state.photos.slice(40, 60)} />*/}
 
-          <ExampleWithLightbox photos={this.state.photos.slice(0, 19)} modalphotos={this.state.photos.slice(19, 38)} />
+          <ExampleWithLightbox photos={this.state.photos}/>
 
 {//          <PhotoList photos={this.state.photos.slice(0,17)}/>
     }
@@ -76,6 +76,7 @@ class App extends React.Component {
           <ExampleDynamicColumns title={'Custom Dynamic Columns'} photos={this.state.photos.slice(100, 120)} />
           <ExampleDynamicLoading photos={this.state.photos} />*/}
         </div>
+
       );
     } else {
       return (

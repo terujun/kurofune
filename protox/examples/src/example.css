@@ -163,18 +163,20 @@ img.icon {
   }
   
   .button-area {
-    text-align: center;  /* 左右に各20pxの余白が設けられます。 */
+    text-align: right;  /* 左右に各20pxの余白が設けられます。 */
+    position: sticky;
+    bottom: 0;
   }
 
   .btn,
   a.btn,
   button.btn {
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.5;
     position: relative;
     display: inline-block;
-    padding: 1rem 4rem;
+    padding: 1rem 1rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -188,7 +190,6 @@ img.icon {
     letter-spacing: 0.1em;
     color: #212529;
     border-radius: 0.5rem;
-    margin: 0 auto;
   }
   
   .btn--orange,
@@ -206,3 +207,58 @@ img.icon {
   a.btn--radius {
     border-radius: 100vh;
   }
+
+
+  .video_play_pause {
+    display: inline-block;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    border: 0.05em solid currentColor;
+    border-radius: 50%;
+    color: #f58300;
+    font-size: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.video_play_pause > input {
+    display: none;
+}
+
+.video_play_pause > input:not(:checked) + span::before {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border: 0.3em solid transparent;
+    border-left: 0.5em solid currentColor;
+    box-sizing: border-box;
+    content: "";
+}
+
+.video_play_pause > input:checked + span::before,
+.video_play_pause > input:checked + span::after {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 0.1em;
+    height: 0.5em;
+    box-sizing: border-box;
+    background-color: currentColor;
+    content: "";
+}
+.video_play_pause > input:checked + span::before {
+    left: 40%;
+}
+.video_play_pause > input:checked + span::after {
+    left: 60%;
+}
+
+
+.video_play_box {
+  text-align: center;  /* 左右に各20pxの余白が設けられます。 */
+  position: sticky;
+  bottom: 0;
+}

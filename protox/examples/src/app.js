@@ -58,9 +58,11 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.photos)
+    console.log("teruya")
+    console.log(page)
     if (this.state.photos) {
       const width = this.state.width;
+      if (page == 'index') {
       return (
         <div className="App">
         {/*<ExampleBasic title={'10:00 AM'} photos={this.state.photos.slice(0, 20)} />
@@ -76,8 +78,44 @@ class App extends React.Component {
           <ExampleDynamicColumns title={'Custom Dynamic Columns'} photos={this.state.photos.slice(100, 120)} />
           <ExampleDynamicLoading photos={this.state.photos} />*/}
         </div>
-
       );
+      }else if(page == 'nicetrip'){
+        return (
+          <div className="App">
+          {/*<ExampleBasic title={'10:00 AM'} photos={this.state.photos.slice(0, 20)} />
+            <ExampleBasic title={'9:00 AM'} photos={this.state.photos.slice(0, 20)} />
+            <ExampleBasic title={'Basic Column Layout'} direction="column" photos={this.state.photos.slice(40, 60)} />*/}
+  
+            <ExampleWithLightbox photos={this.state.photos.slice(0,1)}/>
+  
+  {//          <PhotoList photos={this.state.photos.slice(0,17)}/>
+      }
+          {/*<ExampleCustomComponentSelection photos={this.state.photos.slice(75, 90)} />
+            <ExampleSortable photos={this.state.photos.slice(90, 100)} />
+            <ExampleDynamicColumns title={'Custom Dynamic Columns'} photos={this.state.photos.slice(100, 120)} />
+            <ExampleDynamicLoading photos={this.state.photos} />*/}
+          </div>
+        );
+
+      }else{
+        return (
+          <div className="App">
+          {/*<ExampleBasic title={'10:00 AM'} photos={this.state.photos.slice(0, 20)} />
+            <ExampleBasic title={'9:00 AM'} photos={this.state.photos.slice(0, 20)} />
+            <ExampleBasic title={'Basic Column Layout'} direction="column" photos={this.state.photos.slice(40, 60)} />*/}
+  
+            <ExampleWithLightbox photos={this.state.photos}/>
+  
+  {//          <PhotoList photos={this.state.photos.slice(0,17)}/>
+      }
+          {/*<ExampleCustomComponentSelection photos={this.state.photos.slice(75, 90)} />
+            <ExampleSortable photos={this.state.photos.slice(90, 100)} />
+            <ExampleDynamicColumns title={'Custom Dynamic Columns'} photos={this.state.photos.slice(100, 120)} />
+            <ExampleDynamicLoading photos={this.state.photos} />*/}
+          </div>
+        );
+      }
+
     } else {
       return (
         <div className="App">

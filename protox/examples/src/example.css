@@ -262,3 +262,9 @@ img.icon {
   position: sticky;
   bottom: 0;
 }
+
+#Eyehite {
+  font-family: Helvetica Neue;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}

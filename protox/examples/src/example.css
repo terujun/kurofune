@@ -296,3 +296,8 @@ img.icon {
   background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(./icons/album2.png);
   background-size: cover;
 }
+
+.headfig{
+  text-align: center;  /* 左右に各20pxの余白が設けられます。 */
+  width: 100%;
+ }

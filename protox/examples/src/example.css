@@ -293,7 +293,7 @@ img.icon {
 
 
 #album {
-  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(./icons/album2.png);
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(./album2.png);
   background-size: cover;
 }
 

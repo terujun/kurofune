@@ -19,7 +19,6 @@ function ExampleWithLightbox({ photos }) {
 
   return (
     <div>
-      <h2>10:00 AM</h2>
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (

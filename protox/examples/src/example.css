@@ -27,6 +27,11 @@ a {
 	text-decoration: none;
 }
 
+a.eyehite {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
 a:hover {
 	text-decoration: underline;
 }
@@ -143,6 +148,17 @@ iframe{
     text-align: left;
   }
 }
+
+
+.faceicons {
+  text-align: right;  /* 左右に各20pxの余白が設けられます。 */
+}
+
+#yosemitelogo{
+  font-family: Helvetica Neue;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+ }
 
 img.icon {
   width: 10%;
@@ -267,4 +283,16 @@ img.icon {
   font-family: Helvetica Neue;
   font-size: 20px;
   color: rgb(0, 0, 0);
+}
+
+#Nicetrip {
+  font-family: cursive;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+}
+
+
+#album {
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(./icons/album2.png);
+  background-size: cover;
 }

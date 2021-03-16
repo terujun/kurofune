@@ -95,6 +95,7 @@ class App extends React.Component {
             <ExampleDynamicColumns title={'Custom Dynamic Columns'} photos={this.state.photos.slice(100, 120)} />
             <ExampleDynamicLoading photos={this.state.photos} />*/}
           </div>
+          
         );
 
       }else{

@@ -154,6 +154,10 @@ iframe{
   text-align: right;  /* 左右に各20pxの余白が設けられます。 */
 }
 
+.button_share{
+  text-align: right;  /* 左右に各20pxの余白が設けられます。 */
+}
+
 #yosemitelogo{
   font-family: Helvetica Neue;
   font-size: 20px;
@@ -301,3 +305,5 @@ img.icon {
   text-align: center;  /* 左右に各20pxの余白が設けられます。 */
   width: 100%;
  }
+
+ 

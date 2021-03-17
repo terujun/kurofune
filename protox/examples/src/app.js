@@ -20,7 +20,7 @@ class App extends React.Component {
   loadPhotos() {
     const urlParams = {
       api_key: '18520e2701f418c8f2c39ff39de3bbdf',
-      photoset_id: '72157718610383417',
+      photoset_id: '72157718676278792',
       user_id: '192285108@N06',
       format: 'json',
       per_page: '120',
